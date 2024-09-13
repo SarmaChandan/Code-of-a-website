@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Response | Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Disaster Response Dashboard</h1>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <div class="filter-section">
+                <h3>Filter Disaster Information</h3>
+                <div class="filter-buttons">
+                    <button onclick="filterData('all')">All</button>
+                    <button onclick="filterData('flood')">Floods</button>
+                    <button onclick="filterData('earthquake')">Earthquakes</button>
+                    <button onclick="filterData('wildfire')">Wildfires</button>
+                    <button onclick="filterData('pandemic')">Pandemics</button>
+                </div>
+            </div>
+
+            <div class="latest-updates">
+                <h3>Latest Disaster Updates</h3>
+                <div class="update-item">
+                    <h4>Update Title 1</h4>
+                    <p>Update description goes here. This section contains details about the latest disaster updates.</p>
+                </div>
+                <div class="update-item">
+                    <h4>Update Title 2</h4>
+                    <p>Update description goes here. This section contains details about the latest disaster updates.</p>
+                </div>
+                <!-- Add more update-items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Disaster Response Hub &copy; 2024 | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
